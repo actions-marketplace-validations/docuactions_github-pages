@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: docuactions/github-pages@master
+      - uses: docuactions/github-pages@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_DEPLOYMENT: ${{ secrets.GITHUB_DEPLOYMENT }}
