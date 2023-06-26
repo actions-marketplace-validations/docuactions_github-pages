@@ -18,17 +18,17 @@ jobs:
       - uses: docuactions/github-pages@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_DEPLOYMENT: ${{ secrets.GITHUB_DEPLOYMENT }}
+          GITHUB_DEPLOYMENT: ${{ secrets.DOCUACTIONS_DEPLOYMENT }}
 ```
 
 ## Configuration
 
 The following settings must be passed as environment variables as shown in the example. Sensitive information, especially `GITHUB_TOKEN`, should be [set as encrypted secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables) — otherwise, they'll be public to anyone browsing your repository's source code and CI logs.
 
-| Key               | Value                                               | Suggested Type | Required |
-|-------------------|-----------------------------------------------------|----------------|----------|
-| GITHUB_TOKEN      | Github token                                        | `secret env`   | Yes      |
-| GITHUB_DEPLOYMENT | The deployment branch (different from the main one) | `secret env`   | Yes      |
+| Key                    | Value                                               | Suggested Type | Required |
+|------------------------|-----------------------------------------------------|----------------|----------|
+| GITHUB_TOKEN           | Github token                                        | `secret env`   | Yes      |
+| DOCUACTIONS_DEPLOYMENT | The deployment branch (different from the main one) | `secret env`   | Yes      |
 
 
 ## Credits
