@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docuactions/github-pages@main
         env:
-          DOCUACTIONS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCUACTIONS_TOKEN: ${{ secrets.DOCUACTIONS_TOKEN }}
           GITHUB_DEPLOYMENT: ${{ secrets.DOCUACTIONS_DEPLOYMENT }}
 ```
 
